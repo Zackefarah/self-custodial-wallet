@@ -1,14 +1,17 @@
 import React from "react";
-import "./App.css"; // You can create this CSS file for App-specific styles
+import Navbar from "./components/Navbar";
+import TransactionForm from "./components/TransactionForm";
+import TransactionHistory from "./components/TransactionHistory";
+import Wallet from "./components/Wallet";
+import "./App.css"; // Main app styling
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to the Self-Custodial Wallet</h1>
-        <p>Manage your ERC20 tokens securely.</p>
-        {/* You can add more components or content here */}
-      </header>
+      <Navbar />
+      <Wallet />
+      <TransactionForm />
+      <TransactionHistory />
     </div>
   );
 }
